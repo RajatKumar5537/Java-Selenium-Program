@@ -1,9 +1,14 @@
 package Java;
 
+/*
+ * A Neon Number is a number where the sum of the digits of the square of the number
+ * is equal to the original number.
+ * Example: 9
+ * Square of 9: 9 * 9 = 81
+ * Sum of the digits of 81: 8 + 1 = 9
+ * Since the sum of the digits equals the original number, 9 is a Neon Number.
+ */
 public class NeonNumber {
-	/*
-	 * 9 -> (9) to the power squir --> 9*9=81 --> 8+1=9
-	 */
 	public static void main(String[] args) {
 		int num = 9;
 		String result = isNeon(num);

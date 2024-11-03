@@ -1,6 +1,6 @@
 package Java;
 
-public class SumOfOddIndex {
+public class SumOfEvenOddIndex {
 
 	public static void main(String[] args) {
 		int[] a = { 12, 34, 65, 65, 67 };

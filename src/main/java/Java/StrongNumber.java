@@ -1,13 +1,13 @@
 package Java;
 
+/*
+ * A strong number is a number where the sum of the factorial of its digits
+ * is equal to the original number.
+ * Example: 145 <--> 1! = 1, 4! = 4*3*2*1 = 24, 5! = 5*4*3*2*1 = 120
+ *          1 + 24 + 120 = 145
+ */
 public class StrongNumber {
-	/*
-     * A strong number is a number where the sum of the factorial of its digits
-     * is equal to the original number.
-     * Example: 145 <--> 1! = 1, 4! = 4*3*2*1 = 24, 5! = 5*4*3*2*1 = 120
-     *          1 + 24 + 120 = 145
-     */
-
+	
 	public static void main(String[] args) {
 		int num = 145;
 		int temp = num;

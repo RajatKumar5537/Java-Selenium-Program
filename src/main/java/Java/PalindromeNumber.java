@@ -1,6 +1,6 @@
 package Java;
 
-public class NumberPalindrome {
+public class PalindromeNumber {
 
 	public static void main(String[] args) {
 
