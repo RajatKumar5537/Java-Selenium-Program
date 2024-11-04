@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Window_Handle {
+public class Window_Handle_Popup {
 
 	@Test
 	public static void printAllTitle() {
@@ -23,9 +23,8 @@ public class Window_Handle {
 		driver.get("https://secure.indeed.com/");
 		driver.findElement(By.xpath("//button[@id='login-google-button']")).click();
 		Set<String> allWindow = driver.getWindowHandles();
-		
-		for (String window : allWindow) 
-		{
+
+		for (String window : allWindow) {
 			driver.switchTo().window(window);
 			String title = driver.getTitle();
 			System.out.println("The window title is : " + title);

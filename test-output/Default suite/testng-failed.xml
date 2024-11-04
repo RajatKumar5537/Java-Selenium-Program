@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Selenium.Window_Handle">
+      <class name="Selenium.HiddenDivision_Popup">
         <methods>
-          <include name="printAllTitle"/>
+          <include name="handleHiddenDivision"/>
         </methods>
-      </class> <!-- Selenium.Window_Handle -->
+      </class> <!-- Selenium.HiddenDivision_Popup -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-04T13:22:14 IST" name="Default suite" finished-at="2024-11-04T13:23:21 IST" duration-ms="66966">
+  <suite started-at="2024-11-04T16:28:36 IST" name="Default suite" finished-at="2024-11-04T16:29:35 IST" duration-ms="58436">
     <groups>
     </groups>
-    <test started-at="2024-11-04T13:22:14 IST" name="Default test" finished-at="2024-11-04T13:23:21 IST" duration-ms="66966">
-      <class name="Selenium.Window_Handle">
-        <test-method signature="printAllTitle()[pri:0, instance:Selenium.Window_Handle@411f53a0]" started-at="2024-11-04T13:22:14 IST" name="printAllTitle" finished-at="2024-11-04T13:23:21 IST" duration-ms="66928" status="PASS">
+    <test started-at="2024-11-04T16:28:36 IST" name="Default test" finished-at="2024-11-04T16:29:35 IST" duration-ms="58436">
+      <class name="Selenium.ChildWindow_Popup">
+        <test-method signature="childWindowPopup()[pri:0, instance:Selenium.ChildWindow_Popup@3754a4bf]" started-at="2024-11-04T16:28:36 IST" name="childWindowPopup" finished-at="2024-11-04T16:29:35 IST" duration-ms="58380" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- printAllTitle -->
-      </class> <!-- Selenium.Window_Handle -->
+        </test-method> <!-- childWindowPopup -->
+      </class> <!-- Selenium.ChildWindow_Popup -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
