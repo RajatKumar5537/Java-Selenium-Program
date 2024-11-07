@@ -20,16 +20,15 @@ public class Alert_Popup {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		
+
 		driver.get("https://demo.automationtesting.in/Alerts.html");
 		driver.findElement(By.xpath("//button[@class='btn btn-danger']")).click();
-		
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.alertIsPresent());
 
-		Alert action = driver.switchTo().alert();
-		String text = action.getText();
-		action.accept();
+		Alert alert = driver.switchTo().alert();
+		String text = alert.getText();
+		alert.accept();
 		System.out.println(text);
 		driver.close();
 	}

@@ -22,13 +22,14 @@ public class Window_Handle_Popup {
 
 		driver.get("https://secure.indeed.com/");
 		driver.findElement(By.xpath("//button[@id='login-google-button']")).click();
+		
 		Set<String> allWindow = driver.getWindowHandles();
 
 		for (String window : allWindow) {
 			driver.switchTo().window(window);
-			String title = driver.getTitle();
-			System.out.println("The window title is : " + title);
-		}
+				String title = driver.getTitle();
+				System.out.println("The window title is : " + title);
+			}
 
 		driver.quit();
 	}
