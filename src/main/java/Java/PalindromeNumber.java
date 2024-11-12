@@ -7,6 +7,7 @@ public class PalindromeNumber {
 		int num = 4554;
 		int temp = num;
 		int rev = 0;
+
 		while (num > 0) {
 			int rem = num % 10;
 			rev = rev * 10 + rem;

@@ -1,28 +1,53 @@
 package StringProgram;
 
 public class Convert_To_InitCap {
+
 	public static void main(String[] args) {
-		String str = "raJAt kumAr praDHan";
-		System.out.println("String: " + str);
+		String input = "raJAt kumAr praDHan";
+		String output = toInitCap(input);
+		System.out.println(output); // Rajat Kumar Pradhan
+	}
+
+	public static String toInitCap(String str) {
+		// Split the string into words based on space
+		String[] words = str.split(" ");
+		StringBuilder result = new StringBuilder();
+
+		for (String word : words) {
+			// Capitalize the first letter and make the rest lowercase
+			if (word.length() > 0) {
+				result.append(word.substring(0, 1).toUpperCase()).append(word.substring(1).toLowerCase()).append(" ");
+			}
+		}
+
+		// Remove the last space and return the result
+		return result.toString().trim();
+	}
+
+//	----*****---- End ----*****----	
+
+	public static void rajat() {
+		String str = "raJAt kumAr praDHanqwsd";
 		String result = initCap(str);
-		System.out.println("Converted string: " + result);
+		System.out.println("Converted string: " + result); // Rajat Kumar Pradhan
 
 	}
 
 	public static String initCap(String str) {
 		char[] ch = str.toCharArray();
 
-		for (int i = 0; i < ch.length; i++) {
-			// Capitalize the first character or a character after a space
-			if (i == 0 && ch[i] != ' ' || (i > 0 && ch[i - 1] == ' ' && ch[i] != ' ')) {
-				if (ch[i] >= 'a' && ch[i] <= 'z') {
-					ch[i] = (char) (ch[i] - 32); // Convert to uppercase by subtracting 32
-				}
+		// Handle the first character
+		if (ch.length > 0 && ch[0] != ' ') {
+			ch[0] = Character.toUpperCase(ch[0]);
+		}
+
+		// Iterate through the rest of the characters
+		for (int i = 1; i < ch.length; i++) {
+			// Capitalize if the previous character is a space
+			if (ch[i - 1] == ' ' && ch[i] != ' ') {
+				ch[i] = Character.toUpperCase(ch[i]);
 			} else {
-				// Convert the rest to lowercase if they are uppercase
-				if (ch[i] >= 'A' && ch[i] <= 'Z') {
-					ch[i] = (char) (ch[i] + 32); // Convert to lowercase by adding 32
-				}
+				ch[i] = Character.toLowerCase(ch[i]);
 			}
 		}
 		return new String(ch);

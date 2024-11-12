@@ -1,8 +1,8 @@
 package Java;
 
 /*
- * An Armstrong number is a number that is equal 
- * to the sum of its own digits raised to the power of the number of digits.
+ * It is a number that is equal to the sum of
+ * its own digits raised to the power of the number of digits.
  * Example: 153
  * Digits: 1, 5, 3
  * Calculation: 1^3 + 5^3 + 3^3 = 1 + 125 + 27 = 153
@@ -11,7 +11,40 @@ package Java;
 
 public class ArmstrongNumber {
 
+//	Time Complexity program ----------------
 	public static void main(String[] args) {
+		int num = 153;
+		if (isArmstrong(num)) {
+			System.out.println(num + " is an Armstrong number.");
+		} else {
+			System.out.println(num + " is not an Armstrong number.");
+		}
+	}
+
+	// Function to check if a number is an Armstrong number
+	public static boolean isArmstrong(int num) {
+		int originalNum = num;
+		int sum = 0;
+		int numDigits = String.valueOf(num).length(); // O(n), finding the number of digits
+
+		while (num > 0) {
+			int rem = num % 10; // Extract the last digit
+			sum += Math.pow(rem, numDigits); // Raise the digit to the power of numDigits
+			num /= 10; // Remove the last digit
+		}
+		return sum == originalNum; // If sum equals the original number, it's an Armstrong number
+	}
+
+//	Math.pow() is a method in the Java Math class that takes two arguments. 
+//	The first argument is the base (rem), and the second is the exponent (numDigits).
+//	It returns the result of raising rem to the power of numDigits (rem^numDigits).
+	
+//	----*****---- End ----*****---- 
+
+//	Without using Built in function ----- 
+//	use @Test Annotation for this method 
+
+	public static void armStrong() {
 		int num = 153; // Number to check
 		int temp = num; // Backup of the original number
 		int backUp = temp; // Another backup for final comparison

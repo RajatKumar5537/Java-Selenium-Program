@@ -20,12 +20,12 @@ public class FibonacciSeries {
 		int secondNum = 1;
 		int sum = 0; // Variable to hold the sum of the two preceding numbers
 
-		System.out.println("First Fibonacci number is : " + firstNum);
-		System.out.println("Second Fibonacci number is : " + secondNum);
+		System.out.println("First Fibonacci  : " + firstNum);
+		System.out.println("Second Fibonacci : " + secondNum);
 
 		for (int i = 2; i < 10; i++) { // Start from index 2 since 0 and 1 are already printed
 			sum = firstNum + secondNum; // Calculate the next number in the Fibonacci series
-			System.out.println("Next Fibonacci number is : " + sum);
+			System.out.println("Next Fibonacci   : " + sum);
 			firstNum = secondNum; // 1
 			secondNum = sum; // 1
 		}

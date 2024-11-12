@@ -12,7 +12,7 @@ public class Palindrome_String {
 	}
 
 	public static boolean palindrome(String str) {
-		int i = 0; // Initialize an index variable to track the current character
+		int i = 0;
 
 		// Loop until we reach the middle of the string
 		while (i <= str.length() / 2) {
