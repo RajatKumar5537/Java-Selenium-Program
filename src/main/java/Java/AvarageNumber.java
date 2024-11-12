@@ -9,7 +9,7 @@ public class AvarageNumber {
 		int sum = 0;
 
 		for (int i = 0; i < size; i++) {
-			sum = sum + array[i];
+			sum =+ array[i];
 		}
 		
 		int avrg = sum/size;

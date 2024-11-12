@@ -20,6 +20,8 @@ public class Anagram_String {
 	// Method to check if two strings are anagrams
 	public static boolean anagram(String str1, String str2) {
 		// Get the occurrence count of characters in both strings
+		str1 = str1.toLowerCase();
+		str2 = str2.toLowerCase();
 		int[] count1 = occurrences(str1);
 		int[] count2 = occurrences(str2);
 
@@ -33,16 +35,13 @@ public class Anagram_String {
 
 	// Method to count occurrences of each character in the string
 	public static int[] occurrences(String str) {
-		int[] count = new int[26]; // Array to hold counts of letters A-Z
+		int[] count = new int[256]; // Array to hold counts of letters A-Z
 
 		for (int i = 0; i < str.length(); i++) {
 			char ch = str.charAt(i);
 
-			if (ch >= 'A' && ch <= 'Z') {
-				count[ch - 'A']++; // Increment the count for this character
-			}
-			if (ch >= 'a' && ch <= 'z') {
-				count[ch - 'a']++; // Increment the count for this character
+			if (ch >= 0 && ch < 256) {
+				count[ch]++; // Increment the count for this character
 			}
 		}
 		return count;
