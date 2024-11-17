@@ -15,25 +15,24 @@ package Java;
 
 public class FibonacciSeriesWithoutLoop {
 
-	public static void fibonacci(int firstNum, int secondNum, int sum) {
-		if (firstNum == 0 && secondNum == 1) {
-			System.out.println("First Fibonacci number is : " + firstNum);
-			System.out.println("Second Fibonacci number is : " + secondNum);
+	public static void fibonacci(int a, int b, int sum) {
+		if (a == 0 && b == 1) {
+			System.out.println("1st  number is : " + a);
 		}
 
 		if (sum >= 21) {
 			return;
 		}
-		
-		sum = firstNum + secondNum;
-		System.out.println("Next Fibonacci number is : " + sum);
-		
-		firstNum = secondNum;
-		secondNum = sum;
-		fibonacci(firstNum, secondNum, sum); // Recursive call to generate the next Fibonacci number.
+
+		sum = a + b;
+		System.out.println("Next number is : " + sum);
+
+		a = b;
+		b = sum;
+		fibonacci(a, b, sum); // Recursive call to generate the next Fibonacci number.
 	}
 
 	public static void main(String[] args) {
-		fibonacci(0, 1, 0);  // Initial call to the Fibonacci method, starting with 0 and 1.
+		fibonacci(0, 1, 0); // Initial call to the Fibonacci method, starting with 0 and 1.
 	}
 }

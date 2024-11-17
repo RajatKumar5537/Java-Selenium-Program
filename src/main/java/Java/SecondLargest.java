@@ -5,18 +5,18 @@ public class SecondLargest {
 	public static void main(String[] args) {
 
 		int[] a = { 1008, 40, 384, 24789 };
-		int largest1 = a[0];
-		int largest2 = a[1];
+		int largest = a[0];
+		int secondLargest = a[1];
 
 		for (int i = 0; i < a.length; i++) {
-			if (a[i] > largest1) {
-				largest2 = largest1;
-				largest1 = a[i];
-			} else if (a[i] > largest2) {
-				largest2 = a[i];
+			if (a[i] > largest) {
+				secondLargest = largest;
+				largest = a[i];
+			} else if (a[i] > secondLargest) {
+				secondLargest = a[i];
 			}
 		}
-		System.out.println("The second largest number is : " + largest2);
+		System.out.println("The second largest number is : " + secondLargest);
 	}
 
 //	----*****---- End ----*****---- 

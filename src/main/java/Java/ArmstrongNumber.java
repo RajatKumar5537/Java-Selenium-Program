@@ -35,9 +35,11 @@ public class ArmstrongNumber {
 		return sum == originalNum; // If sum equals the original number, it's an Armstrong number
 	}
 
-//	Math.pow() is a method in the Java Math class that takes two arguments. 
-//	The first argument is the base (rem), and the second is the exponent (numDigits).
-//	It returns the result of raising rem to the power of numDigits (rem^numDigits).
+/*  Math.pow() is a method in the Java, 
+	Math class that takes two arguments. 
+	The first argument is the base (rem), and the second is the exponent (numDigits).
+	It returns the result of raising rem to the power of numDigits (rem^numDigits).
+*/
 	
 //	----*****---- End ----*****---- 
 

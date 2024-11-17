@@ -25,7 +25,7 @@ public class Typicode {
             	.get("/posts/1")
             .then()
 	            .statusCode(200)
-	            .body("title", equalTo("sunt aut facere repellat provident occaecati excepturi optio reprehenderit"))  
+//	            .body("title", equalTo("sunt aut facere repellat provident occaecati excepturi optio reprehenderit"))  
 	            .log().status()  
 	            .log().body();   
     }

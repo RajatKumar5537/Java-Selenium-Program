@@ -16,7 +16,9 @@ public class Convert_To_InitCap {
 		for (String word : words) {
 			// Capitalize the first letter and make the rest lowercase
 			if (word.length() > 0) {
-				result.append(word.substring(0, 1).toUpperCase()).append(word.substring(1).toLowerCase()).append(" ");
+				  result.append(word.substring(0, 1).toUpperCase())
+						.append(word.substring(1).toLowerCase())
+						.append(" ");
 			}
 		}
 
@@ -26,11 +28,10 @@ public class Convert_To_InitCap {
 
 //	----*****---- End ----*****----	
 
-	public static void rajat() {
+	public static void rajat() { // Use main(String[] args)
 		String str = "raJAt kumAr praDHanqwsd";
 		String result = initCap(str);
 		System.out.println("Converted string: " + result); // Rajat Kumar Pradhan
-
 	}
 
 	public static String initCap(String str) {
@@ -52,5 +53,4 @@ public class Convert_To_InitCap {
 		}
 		return new String(ch);
 	}
-
 }

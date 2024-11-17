@@ -5,10 +5,9 @@ import java.util.HashSet;
 public class RemoveDuplicateAlphabate {
 
 	public static void main(String[] args) {
-		String str = "aabbbbssssdfgggg";
-
 		// Using Time Complexity -------------------------
 
+		String str = "aabbbbssssdfgggg";
 		StringBuilder result = new StringBuilder();
 		HashSet<Character> hs = new HashSet<>();
 
@@ -19,13 +18,14 @@ public class RemoveDuplicateAlphabate {
 				result.append(c);
 			}
 		}
-
 		System.out.println("After removing duplicates from the string: " + result.toString());
-
+	}
 //		----*****---- End ----*****---- 
 
 //		Without using Built in function -----------------------------
 
+	public void removeDuplicateAlph() { // us main(String[] args)
+		String str = "aabbbbssssdfgggg";
 		String result1 = "";
 		char[] ch = str.toCharArray();
 
@@ -38,16 +38,11 @@ public class RemoveDuplicateAlphabate {
 					break;
 				}
 			}
-
 			// If character is not repeated, add it to result
 			if (!isRepeat) {
 				result1 = result1 + ch[i];
 			}
 		}
-
-		// Print the final result after processing all characters
 		System.out.print("After remove duplicates  : " + result1);
-
 	}
-
 }

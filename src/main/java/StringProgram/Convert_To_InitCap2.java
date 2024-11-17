@@ -17,7 +17,8 @@ public class Convert_To_InitCap2 {
 
 	        // Process the remaining words: first letter uppercase, rest lowercase
 	        for (int i = 1; i < words.length; i++) {
-	            result.append(" ").append(words[i].toUpperCase());   // Make remaining words fully uppercase
+	            result.append(" ")
+	            	  .append(words[i].toUpperCase());   // Make remaining words fully uppercase
 	        }
 
 	        return result.toString();

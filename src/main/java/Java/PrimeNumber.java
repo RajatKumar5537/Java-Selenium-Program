@@ -1,22 +1,32 @@
 package Java;
 
+import java.util.Scanner;
+
 public class PrimeNumber {
 
 	public static void main(String[] args) {
-		int num = 15; // 15/2=7 , 1
-		int count = 0;
 
-		for (int i = 2; i <= 2; i++) {
-			if (num % i == 0) {
-				count++;
-				break;
-			}
-		}
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a number");
+		int num = sc.nextInt();
 
-		if (count == 0) {
-			System.out.println(num + " is a prime number");
+		boolean result = isPrime(num);
+		if (result) {
+			System.out.println(num + " is a Prime number");
 		} else {
-			System.out.println(num + " is not a prime number");
+			System.out.println(num + " is now a Prime number");
 		}
+	}
+
+	public static boolean isPrime(int num) {
+
+		int i = 2;
+		while (i <= num / 2) {
+			if (num % i == 0) {
+				return false;
+			}
+			i++;
+		}
+		return true;
 	}
 }
