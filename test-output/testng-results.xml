@@ -1,29 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-19T13:10:27 IST" name="Default suite" finished-at="2024-11-19T13:10:34 IST" duration-ms="6522">
+  <suite started-at="2024-11-26T11:03:46 IST" name="Default suite" finished-at="2024-11-26T11:04:26 IST" duration-ms="39811">
     <groups>
     </groups>
-    <test started-at="2024-11-19T13:10:27 IST" name="Default test" finished-at="2024-11-19T13:10:34 IST" duration-ms="6522">
-      <class name="RestAssuredProgram.RestAPI">
-        <test-method signature="getRequest()[pri:1, instance:RestAssuredProgram.RestAPI@6771beb3]" started-at="2024-11-19T13:10:27 IST" name="getRequest" finished-at="2024-11-19T13:10:31 IST" duration-ms="3498" status="PASS">
+    <test started-at="2024-11-26T11:03:46 IST" name="Default test" finished-at="2024-11-26T11:04:26 IST" duration-ms="39811">
+      <class name="Selenium.Print_All_Options">
+        <test-method signature="printAllOption()[pri:0, instance:Selenium.Print_All_Options@5158b42f]" started-at="2024-11-26T11:03:46 IST" name="printAllOption" finished-at="2024-11-26T11:04:26 IST" duration-ms="39759" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getRequest -->
-        <test-method signature="postRequest()[pri:2, instance:RestAssuredProgram.RestAPI@6771beb3]" started-at="2024-11-19T13:10:31 IST" name="postRequest" finished-at="2024-11-19T13:10:32 IST" duration-ms="1223" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postRequest -->
-        <test-method signature="putRequest()[pri:3, instance:RestAssuredProgram.RestAPI@6771beb3]" started-at="2024-11-19T13:10:32 IST" name="putRequest" finished-at="2024-11-19T13:10:33 IST" duration-ms="1006" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- putRequest -->
-        <test-method signature="deleteRequest()[pri:4, instance:RestAssuredProgram.RestAPI@6771beb3]" started-at="2024-11-19T13:10:33 IST" name="deleteRequest" finished-at="2024-11-19T13:10:34 IST" duration-ms="739" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteRequest -->
-      </class> <!-- RestAssuredProgram.RestAPI -->
+        </test-method> <!-- printAllOption -->
+      </class> <!-- Selenium.Print_All_Options -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
