@@ -6,8 +6,11 @@ package Pattern_Program;
 	E F G H 
 	I J K L 
 	M N O P 
+	
+The alphabet is printed in a grid format, 
+with each row containing four consecutive letters.
 */
-public class Pattern_A_P 
+public class AlphabetGrid_A_P
 {
 	public static void main(String[] args) 
 	{

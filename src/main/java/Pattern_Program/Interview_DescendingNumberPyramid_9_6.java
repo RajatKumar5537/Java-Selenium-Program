@@ -5,8 +5,12 @@ package Pattern_Program;
 	9 8 7 
 	9 8 
 	9 
+	
+Where numbers start from 9 and descend in each row, 
+forming a pyramid-like shape.
  */
-public class Interview_ReverseTriangle
+
+public class Interview_DescendingNumberPyramid_9_6
 {
 	 public static void main(String[] args) 
 	 {

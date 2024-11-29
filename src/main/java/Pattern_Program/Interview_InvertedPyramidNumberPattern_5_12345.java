@@ -1,15 +1,19 @@
 package Pattern_Program;
 
 /*
-    5
-   45
-  345
- 2345
-12345
+			    5
+			   45
+			  345
+			 2345
+			12345
+			
+The numbers start from the bottom row's last element 
+and progressively decrease from left to right 
+while forming an inverted pyramid shape.
 
  */
 
-public class Interview_NumberPyramid_5_12345
+public class Interview_InvertedPyramidNumberPattern_5_12345
 {
 	public static void main(String[] args) 
 	{

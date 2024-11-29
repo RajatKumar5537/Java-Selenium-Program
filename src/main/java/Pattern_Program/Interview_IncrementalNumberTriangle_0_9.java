@@ -1,12 +1,15 @@
 package Pattern_Program;
 
 /*
- 	0 
-	1 2 
-	3 4 5 
-	6 7 8 9
+	 	0 
+		1 2 
+		3 4 5 
+		6 7 8 9
+		
+The numbers increase incrementally 
+and arranged in a triangular shape.
  */
-public class Interview_NumberTriangle 
+public class Interview_IncrementalNumberTriangle_0_9
 {
 	public static void main(String[] args) 
 	{

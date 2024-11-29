@@ -5,8 +5,11 @@ package Pattern_Program;
 	2 2 2 2 
 	3 3 3 3 
 	4 4 4 4 
+	
+ Each row contains the same number repeated, 
+ forming a grid-like pattern.
 */
-public class P_1_1_1_1_To_4_4_4_4 
+public class RepeatingNumberGrid_1_4
 {
 	public static void main(String[] args) 
 	{

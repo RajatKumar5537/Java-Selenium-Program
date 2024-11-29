@@ -6,8 +6,12 @@ package Pattern_Program;
 	a b c d e 
 	a b c d e 
 	a b c d e 
+	
+where the alphabet is printed in rows, 
+with each row containing the same sequence of letters 
+from 'a' to 'e'.
 */
-public class abcde 
+public class AlphabetGrid_a_e 
 {
 	public static void main(String[] args) 
 	{

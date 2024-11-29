@@ -5,9 +5,12 @@ package Pattern_Program;
 	5 6 7 8 
 	9 10 11 12 
 	13 14 15 16 
+	
+where numbers are printed sequentially across rows, 
+with each row containing four consecutive numbers.
 
  */
-public class P_1234_16 
+public class NumberGrid_1_16
 {
 	public static void main(String[] args) 
 	{

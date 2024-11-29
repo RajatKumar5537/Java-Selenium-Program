@@ -5,9 +5,11 @@ package Pattern_Program;
 		a b c d 
 		1 2 3 4 
 		a b c d 
+
+The pattern involves alternating rows of numbers and letters.
 */
 
-public class Imp_1234_abcd 
+public class Number_Letter_Pattern_1234_abcd 
 {
 	public static void main(String[] args) 
 	{
