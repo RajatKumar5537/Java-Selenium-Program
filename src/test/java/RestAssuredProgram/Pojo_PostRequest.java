@@ -1,4 +1,4 @@
-package RestAssured_API;
+package RestAssuredProgram;
 
 public class Pojo_PostRequest {
 

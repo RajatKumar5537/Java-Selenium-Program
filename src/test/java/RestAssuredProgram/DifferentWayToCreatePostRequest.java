@@ -1,4 +1,4 @@
-package RestAssured_API;
+package RestAssuredProgram;
 /*
  * How many ways we create request body?
 1.	HashMap

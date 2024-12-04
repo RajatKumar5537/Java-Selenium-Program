@@ -1,4 +1,4 @@
-package RestAssured_API;
+package RestAssuredProgram;
 
 
 import static io.restassured.RestAssured.*;
