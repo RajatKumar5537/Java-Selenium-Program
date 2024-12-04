@@ -1,5 +1,9 @@
 package StringProgram;
 
+/*
+ * I/P = All the best
+ * O/P = best the All
+ */
 public class Reverse_Sentence {
 
 	public static void main(String[] args) {
@@ -7,8 +11,10 @@ public class Reverse_Sentence {
 		String[] words = str.split(" "); // Split the string by spaces to get words
 
 		// Reverse the words and print them
-		for (int i = words.length - 1; i >= 0; i--) {
-			System.out.print(words[i] + (i > 0 ? " " : "")); // Using conditional operator
+		for (int i = words.length - 1; i >= 0; i--) 
+		{
+			System.out.print(words[i] + (i > 0 ? " " : "")); 
+			// Using conditional operator
 			// Add space between words, but not after the last word
 		}
 	}
