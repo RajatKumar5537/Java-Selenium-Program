@@ -14,8 +14,10 @@ stages:
         targetType: 'inline'
         script: |
           # Download and install ChromeDriver
-          Invoke-WebRequest -Uri 'https://storage.googleapis.com/chrome-for-testing-public/122.0.6261.94/win64/chromedriver-win64.zip' -OutFile 'chromedriver.zip'
-          Expand-Archive -Path 'chromedriver.zip' -DestinationPath '$(Agent.ToolsDirectory)\chromedriver'
+          Invoke-WebRequest -Uri 'https://storage.googleapis.com/chrome-for-testing-public/122.0.6261.94/win64/chromedriver-win64.zip' 
+		  -OutFile 'chromedriver.zip'
+          Expand-Archive -Path 'chromedriver.zip' 
+		  -DestinationPath '$(Agent.ToolsDirectory)\chromedriver'
           Remove-Item 'chromedriver.zip'
       displayName: 'Install ChromeDriver'
 
